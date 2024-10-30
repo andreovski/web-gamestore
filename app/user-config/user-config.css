@@ -1,0 +1,64 @@
+main .config {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 100vh;
+
+  padding: 24px;
+}
+
+main .config h1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+main .config form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main .config form .form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btnAmigos {
+  color: white;
+  display: flex;
+  gap: 16px;
+
+  margin-top: 16px;
+  width: 180px;
+}
+
+.frind-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.frind-table thead tr th {
+  color: #ccc;
+}
+
+.frind-table tbody tr {
+  border-bottom: 1px solid #3b3b3b;
+  text-align: center;
+}
+
+.frind-table tbody tr td {
+  padding: 16px;
+}
+
+.btn-edit {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.btn-remove {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9c2e2e;
+}

@@ -1,0 +1,101 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  gap: 20px;
+}
+
+.content h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.content {
+  background-image: url("./assets/pubg-wallpaper.jpg");
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: darken;
+}
+
+.content p {
+  font-size: 1.2rem;
+  font-weight: 400;
+
+  width: 50%;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.games {
+  padding: 20px 10%;
+  margin-top: 26px;
+
+  min-height: 100vh;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+
+.games h2 {
+  font-size: 1.5rem;
+  font-weight: 500;
+
+  width: 100%;
+}
+
+.games-section {
+  display: flex;
+  gap: 20px;
+  padding: 40px 0 0;
+
+  flex-wrap: wrap;
+}
+
+.game-card {
+  width: 220px;
+  height: 300px;
+  padding: 20px;
+  background-color: #111;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+.game-card p {
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+
+.game-card {
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
+}
+
+.game-card.elden-ring {
+  background-image: url("./assets/elden-ring.jpg");
+}
+.game-card.hollow {
+  background-image: url("./assets/hollow.jpg");
+}
+.game-card.cyberpunk {
+  background-image: url("./assets/cyberpunk.jpg");
+}
+.game-card.dead-cells {
+  background-image: url("./assets/dead_cells.jpg");
+}
+.game-card.detroit {
+  background-image: url("./assets/detroit.jpg");
+}
+.game-card.gta {
+  background-image: url("./assets/gta_v.jpg");
+}
