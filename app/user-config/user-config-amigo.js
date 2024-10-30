@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", function () {
       const row = document.createElement("tr");
       row.innerHTML = `
           <td>${fd.fdcode}</td>
-          <td>${fd.fdsurname}</td>d>
+          <td>${fd.fdsurname}</td>
           <td style="display: flex; gap: 32px; justify-content: center">
             <button class="btn-edit" data-index="${index}"><i class="fa-solid fa-pencil"></i> Editar</button>
             <button class="btn-remove" data-index="${index}"><i class="fa-solid fa-trash"></i> Excluir</button>
