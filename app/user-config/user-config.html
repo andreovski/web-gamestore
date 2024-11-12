@@ -31,15 +31,32 @@
 
       <div style="display: flex; gap: 22px;">
         <a href="../../index.html">Inicio</a></li>
-        <a href="../../index.html">Jogos em alta</a>
+        <a href="#" onclick="document.querySelector('.games-section').scrollIntoView({ behavior: 'smooth' });">Jogos em alta</a>
       </div>
 
+      <!-- Não authenticado -->
+      <button class="btn" id="btn-login" style="display: none">
+        <a style="color: inherit" href="./app/login/login.html">Entrar</a>
+      </button>
+
       <!-- Authenticado -->
-      <div class="profile" id="profile">
+      <div class="profile" id="profile" style="display: none">
         <img
           src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Brian"
           alt="Avatar"
         />
+        <div class="info">
+          <p id="username"></p>
+
+          <div class="actions">
+            <button class="btn-logout" id="btn-logout">Sair</button>
+            <button>
+              <a href="./app/user-config/user-config.html">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
 
@@ -72,6 +89,10 @@
             <i class="fas fa-credit-fd"></i>
             Adicionar Amigos
           </a>
+
+          <div style="margin-top: 24px;">
+            <a href="../payment/historico.html">Ver Histórico</a>
+          </div>
 
           <button type="submit" class="btn" style="margin-top: 16px">
             Salvar

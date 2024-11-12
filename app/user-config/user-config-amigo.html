@@ -30,18 +30,33 @@
       <h1 class="logo">GameHub</h1>
 
       <div style="display: flex; gap: 22px;">
-        <a href="../../index.html">Inicio</a></li>
-        <a href="../../index.html">Jogos em alta</a>
+        <a href="/">Inicio</a></li>
+        <a href="#" onclick="document.querySelector('.games-section').scrollIntoView({ behavior: 'smooth' });">Jogos em alta</a>
       </div>
 
+      <!-- Não authenticado -->
+      <button class="btn" id="btn-login" style="display: none">
+        <a style="color: inherit" href="./app/login/login.html">Entrar</a>
+      </button>
+
       <!-- Authenticado -->
-      <div class="profile" id="profile">
+      <div class="profile" id="profile" style="display: none">
         <img
           src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Brian"
           alt="Avatar"
         />
         <div class="info">
-          <p class="username"></p>
+          <p id="username"></p>
+
+          <div class="actions">
+            <button class="btn-logout" id="btn-logout">Sair</button>
+            <button>
+              <a href="./user-config.html">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
 

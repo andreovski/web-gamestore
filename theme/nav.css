@@ -49,6 +49,15 @@ nav .profile .info .btn-logout {
 
   width: auto;
 }
+
+nav .profile .info .actions button {
+  max-height: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav .profile .info .btn-logout:hover {
   background-color: white;
   color: #111;

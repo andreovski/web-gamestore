@@ -36,7 +36,7 @@
 
       <div style="display: flex; gap: 22px;">
         <a href="./index.html">Inicio</a></li>
-        <a href="#" onclick="document.querySelector('.games').scrollIntoView({ behavior: 'smooth' });">Jogos em alta</a>
+        <a href="#" onclick="document.querySelector('.games-section').scrollIntoView({ behavior: 'smooth' });">Jogos em alta</a>
       </div>
 
       <!-- Não authenticado -->
@@ -72,55 +72,51 @@
           A GameHub é uma plataforma de compras de jogos online. Aqui você encontra
           os melhores jogos para todas as plataformas.
         </p>
-        <button class="btn" onclick="document.querySelector('.games').scrollIntoView({ behavior: 'smooth' });">Ver jogos</button>
+        <button class="btn" onclick="document.querySelector('.games-section').scrollIntoView({ behavior: 'smooth' });">Ver jogos</button>
       </section>
-
-      <section class="games">
+      
+      
+      <section class="games-section">
         <h2>Jogo em alta</h2>
 
-        <div class="games-section">
+        <div class="games">
           <div class="game-card elden-ring">
             <p>Elden Ring</p>
+            <p>R$120,90</p>
             <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
-
-        <div class="games-section">
+        
           <div class="game-card dead-cells">
             <p>Dead Cells</p>
+            <p>R$11,90</p>
             <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
-
-        <div class="games-section">
+        
           <div class="game-card hollow">
             <p>Hollow Knight</p>
+            <p>R$22,90</p>
             <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
-
-        <div class="games-section">
+        
           <div class="game-card cyberpunk">
             <p>Cyberpunk 2077</p>
+            <p>R$212,90</p>
             <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
-
-        <div class="games-section">
+        
           <div class="game-card detroit">
             <p>Detroit</p>
+            <p>R$112,90</p>
             <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
-
-        <div class="games-section">
+        
           <div class="game-card gta">
             <p>GTA V</p>
-            <button class="btn btn-buy">
-              Comprar
-            </button>
+            <p>R$162,90</p>
+            <button class="btn btn-buy">Comprar</button>
           </div>
-        </div>
+       </div>
+
       </section>
     </main>
   </body>

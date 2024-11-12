@@ -30,55 +30,48 @@
   line-height: 1.5;
 }
 
-.games {
-  padding: 20px 10%;
-  margin-top: 26px;
-
-  min-height: 100vh;
-
+.games-section {
   display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px 10%;
+
   flex-wrap: wrap;
-  gap: 22px;
 }
 
-.games h2 {
+.games-section h2 {
   font-size: 1.5rem;
   font-weight: 500;
-
+  width: 100%;
+}
+.games {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
   width: 100%;
 }
 
-.games-section {
-  display: flex;
-  gap: 20px;
-  padding: 40px 0 0;
-
-  flex-wrap: wrap;
-}
 
 .game-card {
-  width: 220px;
+  width: 200px;
   height: 300px;
   padding: 20px;
   background-color: #111;
   border-radius: 10px;
-
   display: flex;
   flex-direction: column;
   gap: 10px;
   justify-content: flex-end;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  background-blend-mode: darken;
 }
 
 .game-card p {
   font-size: 1.3rem;
   font-weight: 400;
-}
-
-.game-card {
-  background-size: cover;
-  background-position: center;
-  background-color: rgba(0, 0, 0, 0.3);
-  background-blend-mode: darken;
 }
 
 .game-card.elden-ring {

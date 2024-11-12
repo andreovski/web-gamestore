@@ -29,24 +29,38 @@
 
   <body>
     <nav>
-        <h1 class="logo">GameHub</h1>
-  
-        <div style="display: flex; gap: 22px;">
-          <a href="../../index.html">Inicio</a></li>
-          <a href="../../index.html">Jogos em alta</a>
-        </div>
-  
-        <!-- Authenticado -->
-        <div class="profile" id="profile">
-          <img
-            src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Brian"
-            alt="Avatar"
-          />
-          <div class="info">
-            <p class="username"></p>
+      <h1 class="logo">GameHub</h1>
+
+      <div style="display: flex; gap: 22px;">
+        <a href="../../index.html">Inicio</a></li>
+        <a href="#" onclick="document.querySelector('.games-section').scrollIntoView({ behavior: 'smooth' });">Jogos em alta</a>
+      </div>
+
+      <!-- Não authenticado -->
+      <button class="btn" id="btn-login" style="display: none">
+        <a style="color: inherit" href="./app/login/login.html">Entrar</a>
+      </button>
+
+      <!-- Authenticado -->
+      <div class="profile" id="profile" style="display: none">
+        <img
+          src="https://api.dicebear.com/9.x/bottts-neutral/svg?seed=Brian"
+          alt="Avatar"
+        />
+        <div class="info">
+          <p id="username"></p>
+
+          <div class="actions">
+            <button class="btn-logout" id="btn-logout">Sair</button>
+            <button>
+              <a href="../user-config/user-config.html">
+                <i class="fa-solid fa-gear"></i>
+              </a>
+            </button>
           </div>
         </div>
-      </nav>
+      </div>
+    </nav>
 
     <div class="tabela">
       <h1>Pagamento</h1>
@@ -70,14 +84,15 @@
 
         <label for="cvv">CVV:</label>
         <input type="text" id="cvv" required placeholder="XXX" />
-        <button class="btn" type="reset">Editar</button>
-        <button class="btn" type="reset">Excluir</button>
         <button class="btn" type="submit">Finalizar Pagamento</button>
-      </form>
 
-      <div style="margin-top: 24px;">
-        <a href="historico.html">Ver Histórico</a>
-      </div>
+        <script>
+          document.getElementById('formapagm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            window.location.href = '../../index.html';
+          });
+        </script>
+      </form>
     </div>
 
     <script src="script.js"></script>
